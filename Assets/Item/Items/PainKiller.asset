@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d94e031fde1d3204b806606e5eb59889, type: 3}
+  m_Name: PainKiller
+  m_EditorClassIdentifier: 
+  itemName: "\uC9C4\uD1B5\uC81C"
+  itemDesc: "\uBC14\uC774\uB7EC\uC2A4\uB85C\uBD80\uD130 \uC7A0\uC2DC \uACAC\uB51C
+    \uC218 \uC788\uAC8C \uD574\uC90D\uB2C8\uB2E4.\n10\uCD08\uAC04 \uAC10\uC5FC \uBC29\uC9C0"
+  itemType: 1
+  itemImage: {fileID: 21300000, guid: 45ac7425ea591bd478c08c8472bc65cd, type: 3}
+  itemPrefab: {fileID: 184818, guid: 61c7274510046b94082febf0c475300c, type: 3}
