@@ -14,23 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SimpleSelectedItems:
     m_Keys:
-    - Assets/Menu/Scenes/Stage1.unity
-    - Assets/Menu/Scenes/Stage2.unity
-    - Assets/Standard Assets/Utility/ActionController.cs
-    - Assets/Standard Assets/Utility/Enemy.cs
-    - Assets/Standard Assets/Utility/FirstPersonController.cs
-    - Assets/Standard Assets/Utility/FlashLight.cs
-    - Assets/Standard Assets/Utility/FlashLight.cs.meta
-    - Assets/Standard Assets/Utility/Inventory.cs
-    - Assets/Standard Assets/Utility/ToolTip.cs
-    - Assets/amusedART/StoneMonster/Texture/StoneMonster.png.meta
-    - Packages/manifest.json
-    - Packages/packages-lock.json
-    - ProjectSettings/ProjectVersion.txt
-    - ProjectSettings/TagManager.asset
-    - ProjectSettings/UnityConnectSettings.asset
     - 
-    m_Values: 00000000000000000000000000000000
+    m_Values: 01
   RevisionSummary: 
   ChangesSearchValue: 
   SelectedHistoryRevision: 

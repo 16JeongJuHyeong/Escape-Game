@@ -5,14 +5,11 @@ using UnityEngine.UI;
 
 public class ToolTip : MonoBehaviour
 {
-
     [SerializeField] private GameObject go_Base;
-
     [SerializeField] private Text txt_ItemName;
     [SerializeField] private Text txt_ItemDesc;
     [SerializeField] private Text txt_ItemUse;
 
-    
     public void ShowToolTip(Item _item, Vector3 _pos)
     {
         go_Base.SetActive(true);

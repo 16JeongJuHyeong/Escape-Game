@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-[CreateAssetMenu(fileName = "New Item", menuName = "New Item/item")]
+[CreateAssetMenu(fileName = "New Item", menuName = "New Item/it em")]
 public class Item : ScriptableObject
-{
+{ 
     public string itemName; // 아이템 이름
     [TextArea]
     public string itemDesc;

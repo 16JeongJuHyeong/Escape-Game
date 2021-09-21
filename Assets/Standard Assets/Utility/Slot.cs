@@ -10,14 +10,10 @@ public class Slot : MonoBehaviour, IPointerClickHandler,  IPointerEnterHandler, 
     public int itemCount;
     public Image itemImage;
 
-    [SerializeField]
-    private Text text_Count;
-    [SerializeField]
-    private GameObject go_CountImage;
-    [SerializeField]
-    ProgressBarCircle bar;
-    [SerializeField]
-    private ToolTip theToolTip;
+    [SerializeField] private Text text_Count;
+    [SerializeField] private GameObject go_CountImage;
+    [SerializeField] ProgressBarCircle bar;
+    [SerializeField] private ToolTip theToolTip;
 
     public void ShowToolTip(Item _item, Vector3 _pos)
     {
@@ -36,26 +32,26 @@ public class Slot : MonoBehaviour, IPointerClickHandler,  IPointerEnterHandler, 
         itemImage.color = color;
     }
 
-    public void AddItem(Item _item, int _count = 1)
+    public void AddItem(Item _item, int _count = 1) //새로 획득한 아이템
     {
-        item = _item;
-        itemCount = _count;
-        itemImage.sprite = item.itemImage;
+        item = _item; //아이템
+        itemCount = _count; //획득 개수
+        itemImage.sprite = item.itemImage; //인벤토리 UI에 띄울 아이템 이미지를 획득한 아이템 이미지로 함
 
-        if (item.itemType != Item.ItemType.Data)
+        if (item.itemType != Item.ItemType.Data) // 소모품은 여러개 획득 시 한칸에 개수 표시
         {
             go_CountImage.SetActive(true);
             text_Count.text = itemCount.ToString();
         }
-        else
+        else  //ItemType이 Data면 한개당 한칸씩 표시
         {
             text_Count.text = "0";
-            go_CountImage.SetActive(false);
+            go_CountImage.SetActive(false);  
         }
         SetColor(1);
     }
 
-    public void SetSlotCount(int _count)
+    public void SetSlotCount(int _count) //슬롯의 아이템 개수 설정(특히 이미 있던 아이템이 들어왔을 때 수행)
     {
         itemCount += _count;
         text_Count.text = itemCount.ToString();
